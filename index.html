@@ -1,49 +1,74 @@
 <!DOCTYPE html>
+<!-- Website inspiration: Jordan Singer (https://ibuildmyideas.com/) -->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Alaz Sengul</title>
-        <link rel = "shortcut icon" href = "static/favicon.ico" type = "image/x-icon">
-        <link rel="stylesheet" href="styles/bootstrap.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link href="styles/main.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,400,400i,600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    </head>
-    <body>
-        <header>
-            <div id="siteTitle">
-                <a href="index.html">Alaz Sengul</a>
-            </div>
-            <nav>
-                <a href="bio/index.html">Bio</a>
-                <a href="work/index.html">Work</a>
-                <a href="media/index.html">Media</a>
-            </nav>
-        </header>
-        <main>
-            <div class="section wide">
-                <h1>Hello! I'm Alaz.</h1>
-                <h3>I’m a junior at Columbia University studying computer science and political science. In my spare time, you'll find me producing music, playing basketball, watching movies, and working on side projects.</h3>
-                <p>My resume is linked <a href="https://drive.google.com/file/d/1N82Y5KH5dkDBZKqdFVJKpwXYN6Js_WuP/view?usp=sharing" target="_blank">here</a>. If you have any questions, don't hesitate to get in touch with me via <a href="mailto:alazsengul@gmail.com">email</a>.</p>
-            </div>
-            <div class="section wide sep"></div>
-            <div class="section wide">
-                <h4>What I'm working on</h4>
-                <p>I'm currently a <strong>software engineering intern at the National Institutes of Health</strong> as a <strong>2019 Civic Digital Fellow</strong>, part of a cohort faciliated by <strong>Coding It Forward</strong> to bring technology innovation into the federal government. I'm working on implementing natural language processing to automate and improve their grant evaluation process.</p>
-            </div>
-            <div class="section wide sep"></div>
-
-        </main>
-        <footer>
-            <div class="icon-bar">
-                <a href="https://linkedin.com/in/alazsengul" class="fa fa-linkedin" target="_blank"></a>
-                <a href="https://github.com/alazsengul" class="fa fa-github" target="_blank"></a>
-            </div>
-            <p><strong>© 2019 Alaz Sengul</strong></p>
-        </footer>
-
-    </body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width" />
+      <title>Alaz Sengul</title>
+      <meta name="description" content="Personal website" />
+      <link rel = "shortcut icon" href = "static/favicon.ico" type = "image/x-icon">
+      <link href="styles/main.css" rel="stylesheet">
+      <meta property="og:title" content="Alaz Sengul" />
+      <meta property="og:description" content="Personal website" />
+      <meta property="og:image" content="https://alazsengul.com/images/alaz_profile.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Alaz Sengul" />
+      <meta name="twitter:description" content="Personal website" />
+      <meta name="twitter:image" content="https://alazsengul.com/images/alaz_profile.png" />
+   </head>
+   <body>
+      <div id="content">
+         <div class="section">
+            <img src="images/alaz_profile.png" class="me">
+            <h1>Alaz Sengul</h1>
+            <a href="mailto:alazsengul@gmail.com" class="link">Email -></a>
+            <a href="https://www.linkedin.com/in/alazsengul" class="link" target="_blank">LinkedIn -></a>
+            <a href="https://github.com/alazsengul" class="link" target="_blank">GitHub -></a>
+         </div>
+         <div class="section">
+            <h6>Experience</h6>
+            <ul>
+               <li>
+                  <h3><a href="https://joinhoney.com/" target="_blank">Honey -></a></h3>
+                  <p>Software Engineering Intern</p>
+               </li>
+               <li>
+                  <h3><a href="https://joinhoney.com/" target="_blank">National Institutes of Health -></a></h3>
+                  <p>Software Engineering Intern</p>
+               </li>
+               <li>
+                  <h3><a href="https://joinhoney.com/" target="_blank">Knight Foundation -></a></h3>
+                  <p>Technology Innovation Intern</p>
+               </li>
+            </ul>
+         </div>
+         <div class="section">
+            <h6>Projects</h6>
+            <ul>
+               <li>
+                  <h3><a href="https://scramble.fun" target="_blank">Scramble -></a></h3>
+                  <p>Your campus crush is waiting</p>
+               </li>
+               <li>
+                  <h3><a href="https://flypaperaid.org/" target="_blank">Flypaper -></a></h3>
+                  <p>Tutoring during COVID</p>
+               </li>
+               <li>
+                  <h3><a href="https://github.com/alazsengul/pheme-analytics" target="_blank">Pheme -></a></h3>
+                  <p>Analytics for news comments</p>
+               </li>
+            </ul>
+         </div>
+         <div class="section links">
+            <h6>More Links</h6>
+            <a href="https://blog.codingitforward.com/meet-the-2019-fellows-national-institutes-of-health-c5cba191eb39" class="link" target="_blank">Civic Digital Fellow -></a>
+            <a href="https://bme.columbia.edu/news/opioid-design-challenge" class="link" target="_blank">Winner of Opioid Design Challenge -></a>
+            <a href="https://www.law.miami.edu/news/2015/september/sometimes-it-takes-village-health-rights-clinic-battles-cancer-patient" class="link" target="_blank">Student Abstract of the Year -></a>
+            <a href="https://www.youtube.com/watch?v=TlQdP-Co-AM" class="link" target="_blank">Orchestral Composition Performance -></a>
+            <a href="https://www.miamiherald.com/site-services/miami-herald-events/silver-knight/article150632917.html" class="link" target="_blank">Silver Knight Service Award Nomination -></a>
+            <a href="https://communitynewspapers.com/positive-people/positive-people-pinecrest-alaz-sengul/" class="link" target="_blank">Positive People in Pinecrest -></a>
+            <a href="https://www.gulliverschools.org/about/news/news-posts/~post/alessandra-maggioni-receives-presidents-volunteer-service-award-20170313" class="link" target="_blank">Prudential Spirit of Community Award -></a>
+         </div>
+      </div>
+   </body>
 </html>
