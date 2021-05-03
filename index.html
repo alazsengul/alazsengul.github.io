@@ -1,77 +1,33 @@
+<!-- tells browser we are using html5 -->
 <!DOCTYPE html>
-<!-- Website inspiration: Jordan Singer (https://ibuildmyideas.com/) -->
 <html>
    <head>
+      <!-- defines the encoding of the website, utf-8 is the standard -->
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width" />
+      <!-- mobile responsiveness uses device width and has no initial zoom -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- title of page -->
       <title>Alaz Sengul</title>
-      <meta name="description" content="Personal website" />
-      <link rel = "shortcut icon" href = "static/favicon.ico" type = "image/x-icon">
-      <link href="styles/main.css" rel="stylesheet">
+      <!-- short description of page -->
+      <meta name="description" content="Alaz's personal website" />
+      <!-- link to the favicon -->
+      <link href="./static/favicon.ico" rel="icon">
+      <!-- link to the distribution css file -->
+      <link href="./static/css/dist.css" rel="stylesheet">
+      <!-- facebook open graph markup -->
       <meta property="og:title" content="Alaz Sengul" />
       <meta property="og:description" content="Personal website" />
-      <meta property="og:image" content="https://alazsengul.com/images/alaz_profile.png" />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:image" content="https://www.alazsengul.com/static/images/icon.svg" />
+      <!-- twitter cards markup -->
       <meta name="twitter:title" content="Alaz Sengul" />
-      <meta name="twitter:description" content="Personal website" />
-      <meta name="twitter:image" content="https://alazsengul.com/images/alaz_profile.png" />
+      <meta name="twitter:description" content="Alaz's personal website" />
+      <meta name="twitter:image" content="https://www.alazsengul.com/static/images/icon.svg" />
+      <!-- dev only link to full tailwind -->
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
    </head>
    <body>
-      <div id="content">
-         <div class="section">
-            <img src="images/alaz_profile.png" class="me">
-            <h1>Alaz Sengul</h1>
-            <a href="mailto:alazsengul@gmail.com" class="link">Email -></a>
-            <a href="https://www.linkedin.com/in/alazsengul" class="link" target="_blank">LinkedIn -></a>
-            <a href="https://github.com/alazsengul" class="link" target="_blank">GitHub -></a>
-         </div>
-         <div class="section">
-            <h6>Experience</h6>
-            <ul>
-               <li>
-                  <h3><a href="https://joinhoney.com/" target="_blank">Honey -></a></h3>
-                  <p>Software Engineering Intern</p>
-               </li>
-               <li>
-                  <h3><a href="https://www.nih.gov" target="_blank">National Institutes of Health -></a></h3>
-                  <p>Software Engineering Intern</p>
-               </li>
-               <li>
-                  <h3><a href="https://knightfoundation.org" target="_blank">Knight Foundation -></a></h3>
-                  <p>Technology Innovation Intern</p>
-               </li>
-            </ul>
-         </div>
-         <div class="section">
-            <h6>Projects</h6>
-            <ul>
-               <li>
-                  <h3><a href="https://scramble.fun" target="_blank">Scramble -></a></h3>
-                  <p>Your campus crush is waiting</p>
-               </li>
-               <li>
-                  <h3><a href="https://flypaperaid.org/" target="_blank">Flypaper -></a></h3>
-                  <p>Tutoring during COVID</p>
-               </li>
-               <li>
-                  <h3><a>Logophile (coming soon) -></a></h3>
-                  <p>iPhone app for word lovers</p>
-               </li>
-	       <li>
-		  <h3><a href="https://github.com/alazsengul/products-scraper">Products Scraper -></a></h3>
-		  <p>Open-source API to scrape products across retail sites.</p>
-            </ul>
-         </div>
-         <div class="section links">
-            <h6>More Links</h6>
-            <a href="https://blog.codingitforward.com/meet-the-2019-fellows-national-institutes-of-health-c5cba191eb39" class="link" target="_blank">Civic Digital Fellow -></a>
-            <a href="https://bme.columbia.edu/news/opioid-design-challenge" class="link" target="_blank">Winner of Opioid Design Challenge -></a>
-            <a href="https://www.law.miami.edu/news/2015/september/sometimes-it-takes-village-health-rights-clinic-battles-cancer-patient" class="link" target="_blank">Student Abstract of the Year -></a>
-            <a href="https://www.youtube.com/watch?v=TlQdP-Co-AM" class="link" target="_blank">Orchestral Composition Performance -></a>
-            <a href="https://www.miamiherald.com/site-services/miami-herald-events/silver-knight/article150632917.html" class="link" target="_blank">Silver Knight Service Award Nomination -></a>
-            <a href="https://communitynewspapers.com/positive-people/positive-people-pinecrest-alaz-sengul/" class="link" target="_blank">Positive People in Pinecrest -></a>
-            <a href="https://www.gulliverschools.org/about/news/news-posts/~post/alessandra-maggioni-receives-presidents-volunteer-service-award-20170313" class="link" target="_blank">Prudential Spirit of Community Award -></a>
-         </div>
-      </div>
+      <p class="bg-green-100">
+         hello
+      </p>
    </body>
 </html>
