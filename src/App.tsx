@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import metadata from "./assets/metadata";
+import metadata from "./assets/_metadata";
 
 export default function App() {
   const posts = metadata;

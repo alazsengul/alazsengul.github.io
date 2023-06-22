@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- defines the encoding of the website, utf-8 is the standard -->
+    <meta charset="utf-8">
+    <!-- mobile responsiveness uses device width and has no initial zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- title of page -->
+    <title>Columbia University</title>
+    <!-- short description of page -->
+    <meta name="description" content="Alaz's personal website" />
+    <!-- link to the favicon -->
+    <link href="../static/favicon.ico" rel="icon">
+    <!-- link to the distribution css file -->
+    <!-- <link href="./static/css/dist.css" rel="stylesheet"> -->
+    <!-- facebook open graph markup -->
+    <meta property="og:title" content="Alaz Sengul" />
+    <meta property="og:description" content="Personal website" />
+    <meta property="og:image" content="https://www.alazsengul.com/static/images/icon.svg" />
+    <!-- twitter cards markup -->
+    <meta name="twitter:title" content="Alaz Sengul" />
+    <meta name="twitter:description" content="Alaz's personal website" />
+    <meta name="twitter:image" content="https://www.alazsengul.com/static/images/icon.svg" />
+    <!-- dev only link to full tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- link to helper js function to render post -->
+    <script type="text/javascript" src="../static/js/renderPost.js"></script>
+</head>
+
+<body id="render_post_here" class="bg-white">
+    <script type="text/javascript">
+        const title = "Columbia University";
+        const date = "Apr 30, 2021";
+        const content = `I graduated Columbia with a B.S. in computer science, specializing in "intelligent systems".`;
+        document.getElementById("render_post_here").innerHTML = renderPost(title, date, content);
+    </script>
+</body>
+
+</html>
