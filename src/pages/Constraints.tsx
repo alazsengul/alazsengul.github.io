@@ -1,7 +1,9 @@
 import _ from "lodash";
 import letterDimensions from "../assets/constraints/_letterDimensions";
+import TextLink from "../components/TextLink";
+import { Helmet } from "react-helmet";
 
-function _generateSequence(height: number, width: number, letters: string) {
+function _generateSequence(letters: string, height: number, stretch = true) {
   const sequence = [];
   let translateFactor = 0;
 
@@ -10,7 +12,7 @@ function _generateSequence(height: number, width: number, letters: string) {
     const rawLetterWidth = letterDimensions[letter].width;
     const rawLetterHeight = letterDimensions[letter].height;
     const newLetterWidth = (rawLetterWidth * height) / rawLetterHeight;
-    const scaleFactor = _.random(0.1, 3);
+    const scaleFactor = stretch ? _.random(0.5, 2.5) : 1;
 
     sequence.push(
       <img
@@ -33,12 +35,39 @@ function _generateSequence(height: number, width: number, letters: string) {
 export default function Constraints() {
   return (
     <div className="max-w-screen-md mx-auto rounded-md text-sm leading-4 text-gray-700 p-4 space-y-8">
+      <Helmet>
+        <title>Designing with constraints</title>
+      </Helmet>
       <div className="space-y-1">
         <h1>Designing with constraints</h1>
         <p className="font-light text-gray-500">June 21, 2023</p>
       </div>
-      <div className="flex space-x-[1px]">
-        {_generateSequence(98, 48 * 7, "HYGIENE")}
+      <div className="leading-5 space-y-4">
+        <div>Constraints define creativity.</div>
+        <div>
+          Imagine you are given the task to design a logo for my name with the
+          following constraints:
+        </div>
+        <div>
+          <li>Text-based, one-line logo.</li>
+          <li>
+            <TextLink url="https://rsms.me/inter/">Inter font</TextLink>, black
+            weight.
+          </li>
+          <li>Letters must have 10px height.</li>
+          <li>Font color black.</li>
+        </div>
+        <div>
+          I came up with the below logo. You can refresh this page to see
+          alternate versions.
+        </div>
+        <div className="flex space-x-[2px] items-baseline">
+          {_generateSequence("ALAZSENGUL", 10)}
+        </div>
+        <div>
+          Limit yourself with reasonable constraints and you'll be surprised
+          what you come out with.
+        </div>
       </div>
     </div>
   );

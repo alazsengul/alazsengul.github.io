@@ -1,6 +1,11 @@
+import { Helmet } from "react-helmet";
+
 export default function Twitter() {
   return (
     <div className="max-w-screen-md mx-auto rounded-md text-sm leading-4 text-gray-700 p-4 space-y-8">
+      <Helmet>
+        <title>Thoughts on my time at Twitter</title>
+      </Helmet>
       <div className="space-y-1">
         <h1>Thoughts on my time at Twitter</h1>
         <p className="font-light text-gray-500">November 22, 2022</p>
