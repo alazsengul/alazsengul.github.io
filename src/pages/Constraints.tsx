@@ -1,5 +1,5 @@
 import _ from "lodash";
-import letterDimensions from "../assets/constraints/_letterDimensions";
+import letterDimensions from "../../public/static/constraints/_letterDimensions";
 import TextLink from "../components/TextLink";
 import { Helmet } from "react-helmet";
 
@@ -16,7 +16,7 @@ function _generateSequence(letters: string, height: number, stretch = true) {
 
     sequence.push(
       <img
-        src={`/src/assets/constraints/${letter}.svg`}
+        src={`/public/static/constraints/${letter}.svg`}
         style={{
           height: `${height}px`,
           width: `${newLetterWidth}px`,
