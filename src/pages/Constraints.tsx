@@ -16,7 +16,7 @@ function _generateSequence(letters: string, height: number, stretch = true) {
 
     sequence.push(
       <img
-        src={`/public/static/constraints/${letter}.svg`}
+        src={`/static/constraints/${letter}.svg`}
         style={{
           height: `${height}px`,
           width: `${newLetterWidth}px`,
