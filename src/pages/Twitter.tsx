@@ -13,7 +13,7 @@ export default function Twitter() {
       <div className="leading-5 space-y-4">
         <div>
           I was notified a few weeks ago that November 4th was my last working
-          day at Twitter, ending my time there as a Software Engineer II.
+          day at Twitter, ending my time there as an engineer.
         </div>
         <div>
           For over a year, I was fortunate to work under the Ads Callback team.
