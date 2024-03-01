@@ -7,7 +7,7 @@ export default function Twitter() {
         <title>Thoughts on my time at Twitter</title>
       </Helmet>
       <div className="space-y-1">
-        <h1>Thoughts on my time at Twitter!</h1>
+        <h1>Thoughts on my time at Twitter</h1>
         <p className="font-light text-gray-500">November 22, 2022</p>
       </div>
       <div className="leading-5 space-y-4">
